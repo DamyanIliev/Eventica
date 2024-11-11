@@ -2,7 +2,12 @@ import { component$ } from '@builder.io/qwik';
 import type { DocumentHead } from '@builder.io/qwik-city';
 
 export default component$(() => {
-  return <h1>сватби</h1>;
+  return (
+    <>
+      <h1 class=" pt-[60px] text-black text-4xl">сватби</h1>
+
+    </>
+  );
 });
 
 // Define the document head for SEO
@@ -23,7 +28,7 @@ export const head: DocumentHead = {
     },
     {
       property: 'og:image',
-      content: 'https://example.com/path-to-your-image.jpg', // Replace with your image URL
+      content: '/images/wedding-slide.jpg',
     },
   ],
   links: [

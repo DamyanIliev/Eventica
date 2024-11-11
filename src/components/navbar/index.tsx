@@ -5,6 +5,7 @@ export default component$(() => {
   const state = useStore({ isOpen: false, isDropdownOpen: false });
 
   return (
+    <header class="z-50 fixed top-0 left-0 w-full bg-eventica-blue shadow-md">
     <div class="w-screen h-[60px] bg-eventica-blue flex items-center justify-between px-10 relative z-10">
       <div class="text-white text-3xl font-bold font-serif flex items-center cursor-pointer hover:text-gray-400 mt-[-10px]">
         <Link href="/">Eventica<span class="text-5xl mt-[-13px]">.</span></Link>
@@ -26,7 +27,7 @@ export default component$(() => {
                 </span>
             </span>
           {state.isDropdownOpen && (
-            <div class="absolute top-full mt-0 bg-white text-eventica-blue shadow-lg rounded-lg overflow-hidden z-20">
+            <div class="absolute top-full mt-0 bg-white text-eventica-blue shadow-lg rounded-lg overflow-hidden z-40">
               <Link href="/svatbi" class="block px-4 py-2 hover:bg-gray-200">Сватби</Link>
               <Link href="/corporate" class="block px-4 py-2 hover:bg-gray-200">Корпоративни събития</Link>
               <Link href="/birthday" class="block px-4 py-2 hover:bg-gray-200">Рожден ден</Link>
@@ -81,8 +82,8 @@ export default component$(() => {
             {state.isDropdownOpen && (
               <div class="pl-6 text-white">
                 <Link href="/svatbi" class="block py-2 hover:text-gray-400">Сватби</Link>
-                <Link href="/corporate" class="block py-2 hover:text-gray-400">Корпоративни събития</Link>
-                <Link href="/birthday" class="block py-2 hover:text-gray-400">Рожден ден</Link>
+                <Link href="/corporate" class="block py-2 hover:text-gray-400">Корпоративни събития/Тиймбилдинг</Link>
+                <Link href="/birthday" class="block py-2 hover:text-gray-400">Партита</Link>
               </div>
             )}
           </div>
@@ -94,5 +95,6 @@ export default component$(() => {
         </div>
       )}
     </div>
+    </header>
   );
 });
