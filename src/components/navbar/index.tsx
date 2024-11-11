@@ -38,7 +38,7 @@ export default component$(() => {
         <Link href="/about" class="text-white hover:text-gray-400">За нас</Link>
 
         {/* Call-to-Action Button */}
-        <Link href="#contact" class=" bg-eventica-pine hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300 flex items-center">
+        <Link href="#contact" class=" bg-eventica-white hover:bg-gray-300 text-eventica-blue border border-blue-500 font-bold py-2 px-4 rounded-lg transition duration-300 flex items-center">
           Свържи се с нас
         </Link>
       </div>

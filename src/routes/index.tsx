@@ -12,6 +12,9 @@ export default component$(() => {
       '/images/corporate-slide.jpg',
       '/images/party-slide.jpg',
       '/images/other-slide.jpg',
+      '/images/prom-slide.jpg',
+      '/images/baby-slide.png',
+
     ],
     isFadingOut: false,
   });
@@ -47,7 +50,7 @@ export default component$(() => {
     {
       id: '3',
       title: 'Балове',
-      imageUrl: '/images/corporate.jpg',
+      imageUrl: '/images/prom.jpg',
       description: 'Ние знаем коелко е важен този ден за теб. Не се притеснявай за организацията, ние поемаме!',
       link: '/proms'
     },
@@ -55,13 +58,13 @@ export default component$(() => {
       id: '4',
       title: 'Партита',
       imageUrl: '/images/party.jpg',
-      description: 'Организираме незабравими партита за нашите клиенти! Парти за Рожден ден',
+      description: 'Организираме незабравими партита за нашите клиенти! Парти за Рожден ден, или по друг повод.',
       link: '/party'
     },
     {
       id: '5',
       title: 'Разкриване пола на бебето',
-      imageUrl: '/images/corporate.jpg',
+      imageUrl: '/images/baby.jpg',
       description: 'Ако искате да разкриете пола на бебето ви, пред вашите приятели по интересен начин, ние ще се погрижим за организацията на партито.',
       link: '/genderreveel'
     },
@@ -69,7 +72,7 @@ export default component$(() => {
       id: '6',
       title: 'Събитие по ваша идея',
       imageUrl: '/images/other.jpg',
-      description: 'Можем да организираме друго, желано от вас събитие',
+      description: 'Можем да организираме друго, желано от вас събитие.',
       link: '/other'
     },
     
