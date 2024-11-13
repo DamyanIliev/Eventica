@@ -127,6 +127,52 @@ export default component$(() => {
         ))}
       </div>
     </div>
+    <section class="pt-16 pb-24 px-4 md:px-8 text-center bg-gray-100">
+      {/* Заглавие и уводен текст */}
+      <div class="text-center mb-8">
+        <h2 class="text-4xl font-bold text-eventica-blue mb-4">Защо да изберете нас?</h2>
+        <p class="text-gray-700 text-lg max-w-2xl mx-auto">
+           Ние създаваме незабравими събития. Пестим вашето време и усилия. Оптимизират разходите, така че да се наслаждавате на деня си. Предоставяме професионално организирани събития с внимание към всеки детайл.
+        </p>
+      </div>
+
+      {/* Модел на работа в 3 стъпки */}
+      <div class="grid gap-8 md:grid-cols-3 text-center max-w-5xl mx-auto">
+        {/* Стъпка 1: Консултация */}
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+          <div class="text-eventica-blue text-6xl mb-4">📞</div>
+          <h3 class="text-2xl font-semibold mb-2">Консултация</h3>
+          <p class="text-gray-600">
+            Първата ни стъпка е обсъждане на вашите желания и визия, за да създадем събитие, което отговаря на очакванията ви.
+          </p>
+        </div>
+
+        {/* Стъпка 2: Посредничество */}
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+          <div class="text-eventica-blue text-6xl mb-4">🤝</div>
+          <h3 class="text-2xl font-semibold mb-2">Посредничество</h3>
+          <p class="text-gray-600">
+            Ние се грижим за всички договорки с доставчици, осигурявайки качествени услуги на изгодни цени.
+          </p>
+        </div>
+
+        {/* Стъпка 3: Организация */}
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+          <div class="text-eventica-blue text-6xl mb-4">🎉</div>
+          <h3 class="text-2xl font-semibold mb-2">Организация</h3>
+          <p class="text-gray-600">
+            Поемаме цялата координация и изпълнение, така че да се насладите напълно на вашия специален ден.
+          </p>
+        </div>
+      </div>
+
+      {/* Заключителен текст и бутон за действие */}
+      <div class="mt-12">
+        <Link href="#contact" class="bg-eventica-blue text-white font-bold py-2 px-6 rounded-lg hover:bg-blue-700 transition duration-300">
+          Свържете се с нас
+        </Link>
+      </div>
+    </section>
     </>
   );
 });

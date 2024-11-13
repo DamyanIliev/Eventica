@@ -46,6 +46,8 @@
     "vite-tsconfig-paths": "^4.2.1"
   },
   "dependencies": {
-    "@ant-design/icons": "^5.5.1"
+    "@ant-design/icons": "^5.5.1",
+    "firebase": "^11.0.1",
+    "mongoose": "^8.8.1"
   }
 }
