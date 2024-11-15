@@ -26,7 +26,6 @@ export default component$(() => {
         console.log("Form submitted with:", formData);
     
         try {
-          // Изпращане на данни към сървъра (пример с Express бекенд)
           const response = await fetch('http://localhost:8080/api/contact', {
             method: 'POST',
             headers: {
@@ -34,7 +33,23 @@ export default component$(() => {
             },
             body: JSON.stringify(formData),
           });
-    
+      
+          if (response.ok) {
+            // Успешно изпращане
+            const result = await response.json(); // Очакваме сървърът да върне съобщение
+            alertMessage.message = result.message || "Формулярът е изпратен успешно!";
+            alertMessage.type = "success";
+      
+            // Нулиране на полетата на формуляра (по избор)
+            contactForm.name = '';
+            contactForm.email = '';
+            contactForm.phone = '';
+          } else {
+            // Грешка от сървъра
+            const errorResult = await response.json();
+            alertMessage.message = errorResult.message || "Неуспешно изпращане на формуляра.";
+            alertMessage.type = "error";
+          }
         } catch (error) {
           console.error("Error during form submission:", error);
           alertMessage.message = "Възникна неочаквана грешка!";
@@ -43,7 +58,7 @@ export default component$(() => {
       });    
 
   return (
-    <section class="flex flex-col md:flex-row items-center justify-center w-full h-[93vh] bg-gray-50 p-8 mt-[60px]">
+    <section class="flex flex-col md:flex-row items-center justify-center w-full h-[85vh] bg-gray-50 p-8 mt-[60px]">
   {/* Left side - Contact Info */}
   <div class="flex-1 flex flex-col items-center justify-center text-center p-6">
     <h2 class="text-2xl font-semibold text-eventica-blue mb-4">Свържете се с нас директно</h2>
@@ -58,7 +73,7 @@ export default component$(() => {
   {/* Right side - Contact Form */}
   <div class="flex-1 w-full p-6">
     <h2 class="text-2xl font-semibold text-center text-eventica-blue mb-6">Оставете данни и ние ще се свържем с вас</h2>
-    <form onSubmit$={handleSubmit} method="POST" class="space-y-4">
+    <form preventdefault:submit onSubmit$={handleSubmit} class="space-y-4">
       {/* Name Field */}
       <div>
         <label for="name" class="block text-sm font-medium text-gray-700">Име</label>

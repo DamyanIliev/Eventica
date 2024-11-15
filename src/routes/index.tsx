@@ -32,13 +32,20 @@ export default component$(() => {
     return () => clearInterval(interval); // Спиране на интервала при премахване на компонента
   });
 
+  useVisibleTask$(() => {
+    // Премахваме хеша от URL при зареждане на страницата
+    if (window.location.hash) {
+      history.replaceState(null, '', window.location.pathname + window.location.search);
+    }
+  });
+
   const events = [
     {
       id: '1',
       title: 'Сватби',
       imageUrl: '/images/wedding.jpg',
       description: 'Ще организираме перфектната за теб сватба!',
-      link: '/svatbi'
+      link: '/wedding'
     },
     {
       id: '2',
@@ -52,7 +59,7 @@ export default component$(() => {
       title: 'Балове',
       imageUrl: '/images/prom.jpg',
       description: 'Ние знаем коелко е важен този ден за теб. Не се притеснявай за организацията, ние поемаме!',
-      link: '/proms'
+      link: '/prom'
     },
     {
       id: '4',
@@ -94,10 +101,10 @@ export default component$(() => {
         </p>
         {/* Бутоните за CTA */}
         <div class="flex justify-center space-x-4">
-          <Link href="#contact" class="bg-eventica-blue text-white font-bold py-2 px-6 rounded-lg hover:bg-blue-700 transition duration-300">
+          <Link href="/contacts" class="bg-eventica-blue text-white font-bold py-2 px-6 rounded-lg hover:bg-blue-700 transition duration-300">
             Свържете се с нас
           </Link>
-          <Link href="#gallery" class="bg-white text-eventica-blue font-bold py-2 px-6 rounded-lg hover:bg-gray-200 transition duration-300">
+          <Link href="#section2" class="bg-white text-eventica-blue font-bold py-2 px-6 rounded-lg hover:bg-gray-200 transition duration-300">
             Разгледайте нашите събития
           </Link>
         </div>
@@ -113,6 +120,7 @@ export default component$(() => {
     </section>
 
     {/* What we offer */}
+    <section  id="section2" class="relative pt-[60px] -mt-[60px]"></section>
       <div class="w-full mx-1 mt-8">
         <h1 class="text-3xl font-bold mb-6 flex flex-col text-center">Ние организираме</h1>
         <div class="flex flex-wrap justify-center">
@@ -168,7 +176,7 @@ export default component$(() => {
 
       {/* Заключителен текст и бутон за действие */}
       <div class="mt-12">
-        <Link href="#contact" class="bg-eventica-blue text-white font-bold py-2 px-6 rounded-lg hover:bg-blue-700 transition duration-300">
+        <Link href="/contacts" class="bg-eventica-blue text-white font-bold py-2 px-6 rounded-lg hover:bg-blue-700 transition duration-300">
           Свържете се с нас
         </Link>
       </div>

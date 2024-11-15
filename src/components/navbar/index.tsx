@@ -28,9 +28,12 @@ export default component$(() => {
             </span>
           {state.isDropdownOpen && (
             <div class="absolute top-full mt-0 bg-white text-eventica-blue shadow-lg rounded-lg overflow-hidden z-40">
-              <Link href="/svatbi" class="block px-4 py-2 hover:bg-gray-200">Сватби</Link>
-              <Link href="/corporate" class="block px-4 py-2 hover:bg-gray-200">Корпоративни събития</Link>
-              <Link href="/birthday" class="block px-4 py-2 hover:bg-gray-200">Рожден ден</Link>
+              <Link href="/wedding" class="block px-4 py-2 hover:bg-gray-200">Сватби</Link>
+              <Link href="/corporate" class="block px-4 py-2 hover:bg-gray-200">Корпоративни събития/Тиймбилдинг</Link>
+              <Link href="/prom" class="block px-4 py-2 hover:bg-gray-200">Балoве</Link>
+              <Link href="/party" class="block px-4 py-2 hover:bg-gray-200">Парти</Link>
+              <Link href="/genderreveel" class="block px-4 py-2 hover:bg-gray-200">Разкриване пола на бебето</Link>
+              <Link href="/other" class="block px-4 py-2 hover:bg-gray-200">Събитие по ваша идея</Link>
             </div>
           )}
         </div>
@@ -38,7 +41,7 @@ export default component$(() => {
         <Link href="/about" class="text-white hover:text-gray-400">За нас</Link>
 
         {/* Call-to-Action Button */}
-        <Link href="#contact" class=" bg-eventica-white hover:bg-gray-300 text-eventica-blue border border-blue-500 font-bold py-2 px-4 rounded-lg transition duration-300 flex items-center">
+        <Link href="/contacts" class=" bg-eventica-white hover:bg-gray-300 text-eventica-blue border border-blue-500 font-bold py-2 px-4 rounded-lg transition duration-300 flex items-center">
           Свържи се с нас
         </Link>
       </div>
@@ -70,7 +73,7 @@ export default component$(() => {
           <div>
             <button 
               onClick$={() => state.isDropdownOpen = !state.isDropdownOpen}
-              class="py-2 ml-[120px] w-full text-center text-white hover:text-gray-400 inline-flex items-center"
+              class="py-2 ml-[12vw] w-full text-center text-white hover:text-gray-400 inline-flex items-center"
             >
               Събития 
                 <span class="mt-1">
@@ -81,15 +84,18 @@ export default component$(() => {
             </button>
             {state.isDropdownOpen && (
               <div class="pl-6 text-white">
-                <Link href="/svatbi" class="block py-2 hover:text-gray-400">Сватби</Link>
-                <Link href="/corporate" class="block py-2 hover:text-gray-400">Корпоративни събития/Тиймбилдинг</Link>
-                <Link href="/birthday" class="block py-2 hover:text-gray-400">Партита</Link>
+                <Link href="/wedding" class="block py-2 hover:text-gray-400">Сватби</Link>
+                <Link href="/corporate" class="block px-4 py-2 hover:bg-gray-200">Корпоративни събития/Тиймбилдинг</Link>
+              <Link href="/prom" class="block px-4 py-2 hover:bg-gray-200">Балoве</Link>
+              <Link href="/party" class="block px-4 py-2 hover:bg-gray-200">Парти</Link>
+              <Link href="/genderreveel" class="block px-4 py-2 hover:bg-gray-200">Разкриване пола на бебето</Link>
+              <Link href="/other" class="block px-4 py-2 hover:bg-gray-200">Събитие по ваша идея</Link>
               </div>
             )}
           </div>
 
           <Link href="/about" class="block py-2 text-white hover:text-gray-400">За нас</Link>
-          <Link href="#contact" class="block bg-eventica-pine hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300 items-center">
+          <Link href="/contacts" class="block bg-eventica-white hover:bg-gray-300 text-eventica-blue border font-bold py-2 px-4 transition duration-300 items-center">
             Свържи се с нас
           </Link>
         </div>
