@@ -88,7 +88,7 @@ export default component$(() => {
   return (
     <> 
     {/* Call to action part */}
-    <section class=" pt-[60px] relative w-full h-[99vh] bg-cover bg-center flex items-center justify-center text-center text-white overflow-hidden">
+    <section class=" pt-[60px] relative w-full h-[100vh] bg-cover bg-center flex items-center justify-center text-center text-white overflow-hidden">
       {/* Overlay за по-голям контраст */}
       <div class="absolute inset-0 bg-black bg-opacity-50"></div>
       {/* Основно съдържание */}
