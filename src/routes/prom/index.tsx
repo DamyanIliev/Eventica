@@ -101,11 +101,11 @@ export default component$(() => {
 
 // Define the document head for SEO
 export const head: DocumentHead = {
-  title: 'Организация на балове',
+  title: 'Eventica | Организация на балове',
   meta: [
     {
       name: 'description',
-      content: 'Eventica | Организация на балове',
+      content: 'Евентика ще ви помогне да организирате изискан и елегантен бал, който ще остане в спомените за цял живот. Ние знаем колко е важен този ден за теб.',
     },
     {
       property: 'og:title',
@@ -113,7 +113,7 @@ export const head: DocumentHead = {
     },
     {
       property: 'og:description',
-      content: 'Eventica ще ви помогне да организирате един изискан и елегантен бал, който ще остане в спомените за цял живот.',
+      content: 'Евентика ще ви помогне да организирате изискан и елегантен бал, който ще остане в спомените за цял живот. Ние знаем колко е важен този ден за теб.',
     },
     {
       property: 'og:image',

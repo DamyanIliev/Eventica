@@ -8,7 +8,7 @@ export default component$(() => {
   const state = useStore({
     currentSlide: 0,
     slides: [
-      '/images/wedding-slide.jpg',
+      '/images/wedding3-slide.jpg',
       '/images/corporate-slide.jpg',
       '/images/party-slide.jpg',
       '/images/other-slide.jpg',
@@ -43,7 +43,7 @@ export default component$(() => {
     {
       id: '1',
       title: 'Сватби',
-      imageUrl: '/images/wedding.jpg',
+      imageUrl: '/images/wedding3.jpg',
       description: 'Ще организираме перфектната за теб сватба!',
       link: '/wedding'
     },
@@ -188,11 +188,24 @@ export default component$(() => {
 
 
 export const head: DocumentHead = {
-  title: "Eventica",
+  title: "Eventica | Aгенция за организиране на събития.",
   meta: [
     {
       name: "description",
-      content: "Eventica - организира вашите събития!",
+      content: "Евентика може да помогнем в организацията, на вашето желано събитие. Цялостна реализация на ивенти. Пестим вашето време и ресурси.",
+    }, 
+    {
+      property: 'og:title',
+      content: 'Eventica | Aгенция за организиране на събития.',
+    },
+    {
+      property: 'og:description',
+      content: 'Евентика може да помогнем в организацията, на вашето желано събитие. Цялостна реализация на ивенти. Пестим вашето време и ресурси.',
+    },
+    {
+      property: 'og:image',
+      content: '../../public/images/logo-big.png',
     },
   ],
+
 };

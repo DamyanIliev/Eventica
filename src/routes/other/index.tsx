@@ -91,19 +91,19 @@ export default component$(() => {
 
 // Define the document head for SEO
 export const head: DocumentHead = {
-  title: 'Събитие по ваша идея',
+  title: 'Eventica | Агенция за организиране на събития',
   meta: [
     {
       name: 'description',
-      content: 'Eventica | Събитие по ваша идея',
+      content: 'Създайте уникално събитие по ваша идея с помощта на професионалистите от Евентика. Цялостна реализация на събития. Пестим вашето време и ресурси.',
     },
     {
       property: 'og:title',
-      content: 'Eventica | Събитие по ваша идея',
+      content: 'Eventica | Агенция за организиране на събития',
     },
     {
       property: 'og:description',
-      content: 'Създайте уникално събитие по ваша идея с помощта на професионалистите от Eventica.',
+      content: 'Създайте уникално събитие по ваша идея с помощта на професионалистите от Евентика. Цялостна реализация на събития. Пестим вашето време и ресурси.',
     },
     {
       property: 'og:image',

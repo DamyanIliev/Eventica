@@ -6,7 +6,7 @@ export default component$(() => {
   return (
     <>
       {/* Заглавие на секцията */}
-      <section class="h-[70vh] relative pt-[150px] pb-16 px-4 md:px-8 text-center bg-cover bg-center" style={{ backgroundImage: 'url(/images/wedding2-slide.jpg)' }}>
+      <section class="h-[70vh] relative pt-[150px] pb-16 px-4 md:px-8 text-center bg-cover bg-center" style={{ backgroundImage: 'url(/images/wedding3-slide.jpg)' }}>
         <div class="absolute inset-0 bg-black bg-opacity-50"></div> {/* Полупрозрачна тъмна покривка */}
         <h1 class="relative text-4xl font-bold text-white mb-4">Организация на сватби</h1>
           <p class="relative text-lg text-white max-w-3xl mx-auto mb-8">
@@ -103,11 +103,11 @@ export default component$(() => {
 
 // Define the document head for SEO
 export const head: DocumentHead = {
-  title: 'Организация на сватби',
+  title: 'Eventica | Организация на сватби',
   meta: [
     {
       name: 'description',
-      content: 'Eventica | Oрганизация на сватби',
+      content: 'Евентика ще Ви помогне да организирате мечтаната от вас сватба! Цялостна реализация на сватби. Пестим вашето време и ресурси.',
     },
     {
       property: 'og:title',
@@ -115,11 +115,11 @@ export const head: DocumentHead = {
     },
     {
       property: 'og:description',
-      content: 'Eventica ще Ви помогне да организирате мечтаната от вас сватба!',
+      content: 'Евентика ще Ви помогне да организирате мечтаната от вас сватба! Цялостна реализация на сватби. Пестим вашето време и ресурси',
     },
     {
       property: 'og:image',
-      content: '/images/wedding-slide.jpg',
+      content: '/images/wedding3-slide.jpg',
     },
   ],
   links: [

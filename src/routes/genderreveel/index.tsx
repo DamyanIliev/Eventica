@@ -85,11 +85,11 @@ export default component$(() => {
 
 // Define the document head for SEO
 export const head: DocumentHead = {
-  title: 'Организация на Gender Reveal партита',
+  title: 'Eventica | Организация на Gender Reveal партита',
   meta: [
     {
       name: 'description',
-      content: 'Eventica | Организация на партита за разкриване на пола на бебето',
+      content: 'Направете момента незабравим с Евентика. Професионална организация на партита за разкриване на пола. Цялостна реализация на събития. Пестим вашето време и ресурси.',
     },
     {
       property: 'og:title',
@@ -97,7 +97,7 @@ export const head: DocumentHead = {
     },
     {
       property: 'og:description',
-      content: 'Направете момента незабравим с Eventica. Професионална организация на партита за разкриване на пола.',
+      content: 'Направете момента незабравим с Евентика. Професионална организация на партита за разкриване на пола. Цялостна реализация на събития. Пестим вашето време и ресурси.',
     },
     {
       property: 'og:image',

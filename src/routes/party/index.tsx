@@ -135,7 +135,7 @@ export default component$(() => {
 
 // SEO настройки
 export const head: DocumentHead = {
-  title: 'Организация на партита | Eventica',
+  title: '| Eventica | Организация на партита',
   meta: [
     {
       name: 'description',
@@ -143,7 +143,7 @@ export const head: DocumentHead = {
     },
     {
       property: 'og:title',
-      content: 'Организация на партита | Eventica',
+      content: 'Eventica | Организация на партита',
     },
     {
       property: 'og:description',
